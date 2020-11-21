@@ -45,8 +45,8 @@ export default function Intro() {
           </Col>
           <Col lg={8}>
             <h1 className="intro_text my-2 mx-auto">
-              Hi ! I'm Nico, and maybe I'm your next junior full stack
-              developper too ! Wanna talk about it ?
+              Hi ! I'm Nico, and I may be your next junior full stack developper
+              too ! Wanna talk about it ?
             </h1>
           </Col>
         </Row>

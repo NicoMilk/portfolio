@@ -14,16 +14,24 @@ body {
 
 /* navbar */
 
-.navbar {
-  background-color: var(--milkOrange);
+.navbar_container {
+  background-color: rgb(122, 229, 233);
 }
 
-.navbar_container {
-  background-color: darksalmon;
-}
+/* .navbar {
+  background-color: var(--milkOrange);
+} */
 
 .nav-link {
-  color: var(--milkLight) !important;
+  color: var(--milkOrange) !important;
+  /* cursor: pointer; */
+  /* border: solid 1px darkgreen; */
+}
+
+@media (max-width: 991px) {
+  .navbar_social_media_link {
+    display: none !important;
+  }
 }
 
 /* intro */
@@ -85,6 +93,12 @@ body {
   /* background-color: rgb(0, 0, 0); */
   /* border-style: solid; */
   border-color: #e9e9e2 !important;
+}
+
+@media (max-width: 991px) {
+  .card_column {
+    padding: 0em 0px !important;
+  }
 }
 
 .card-body {

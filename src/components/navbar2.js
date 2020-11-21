@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
 import { Link } from "react-scroll"
 import { VscGithubInverted } from "react-icons/vsc"
-import { FaLinkedin } from "react-icons/fa"
+import { FaHome, FaLinkedin } from "react-icons/fa"
 
 export default function Navbar2() {
   return (
@@ -10,10 +10,10 @@ export default function Navbar2() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        // bg="dark"
-        // variant="dark"
+        bg="dark"
+        variant="dark"
         fixed="top"
-        className="navbar pb-0"
+        className="navbar align-items-stretch pb-0"
       >
         {/* <Navbar.Brand href="#home">Nicolas Coulot</Navbar.Brand> */}
         <Link
@@ -26,7 +26,8 @@ export default function Navbar2() {
           offset={-70}
           duration={500}
         >
-          <strong>Nicolas Coulot</strong>
+          <FaHome size="2em" />
+          {/* <strong>Nicolas Coulot</strong> */}
         </Link>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -72,24 +73,24 @@ export default function Navbar2() {
             >
               Contact
             </Link>
-            <Link
+            <a
               href="https://www.linkedin.com/in/nicolascoulot"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2"
+              className="nav-link mx-2"
               variant="outline-light"
             >
               <FaLinkedin size="2em" />
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://github.com/NicoMilk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2"
+              className="nav-link mx-2"
               variant="outline-light"
             >
               <VscGithubInverted size="2em" />
-            </Link>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

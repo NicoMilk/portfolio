@@ -10,18 +10,6 @@ export default function Contact() {
         </Col>
       </Row>
       <Row className="pt-5">
-        <Col lg={{ span: 6, order: 1 }}>
-          <Image
-            data-sal="flip-top"
-            data-sal-duration="2000"
-            data-sal-easing="ease"
-            className="contact_image"
-            src="https://source.unsplash.com/1600x900/?scuba"
-            alt="about image"
-            fluid
-          />
-        </Col>
-
         <Col lg={{ span: 6, order: 2 }}>
           <Form>
             <Form.Group controlId="name">
@@ -42,8 +30,21 @@ export default function Contact() {
               <Form.Control as="textarea" rows="5" required />
             </Form.Group>
 
-            <Button type="submit">Envoyer</Button>
+            <Button type="submit" block>
+              Envoyer
+            </Button>
           </Form>
+        </Col>
+        <Col lg={{ span: 6, order: 1 }}>
+          <Image
+            data-sal="flip-top"
+            data-sal-duration="2000"
+            data-sal-easing="ease"
+            className="contact_image"
+            src="https://source.unsplash.com/1600x900/?scuba"
+            alt="about image"
+            fluid
+          />
         </Col>
       </Row>
     </Container>
