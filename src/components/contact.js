@@ -1,16 +1,28 @@
 import React from "react"
-import { Container, Row, Col, Form, Button } from "react-bootstrap"
+import { Container, Row, Col, Form, Button, Image } from "react-bootstrap"
 
 export default function Contact() {
   return (
-    <Container fluid className="contact">
+    <Container fluid className="contact py-5">
       <Row className="text-center">
         <Col lg={12}>
           <h1>Parlons-en !</h1>
         </Col>
       </Row>
-      <Row>
-        <Col lg={6}>
+      <Row className="pt-5">
+        <Col lg={{ span: 6, order: 1 }}>
+          <Image
+            data-sal="flip-top"
+            data-sal-duration="2000"
+            data-sal-easing="ease"
+            className="contact_image"
+            src="https://source.unsplash.com/1600x900/?scuba"
+            alt="about image"
+            fluid
+          />
+        </Col>
+
+        <Col lg={{ span: 6, order: 2 }}>
           <Form>
             <Form.Group controlId="name">
               <Form.Label>Nom</Form.Label>
@@ -33,7 +45,6 @@ export default function Contact() {
             <Button type="submit">Envoyer</Button>
           </Form>
         </Col>
-        <Col lg={6}>An image will take place here</Col>
       </Row>
     </Container>
   )

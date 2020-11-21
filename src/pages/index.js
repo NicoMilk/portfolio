@@ -11,7 +11,7 @@ import Contact from "../components/contact"
 export default function Home() {
   return (
     <Layout>
-      <Container fluid>
+      <Container fluid className="px-0">
         <Intro />
         <About />
         <Projects />

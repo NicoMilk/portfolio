@@ -1,67 +1,98 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Container, Row, Col } from "react-bootstrap"
-
-// const ListLink = props => (
-//   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-//     <Link to={props.to}>{props.children}</Link>
-//   </li>
-// )
+import { Container, Navbar, Nav } from "react-bootstrap"
+import { Link } from "react-scroll"
+import { VscGithubInverted } from "react-icons/vsc"
+import { FaLinkedin } from "react-icons/fa"
 
 export default function Navbar2() {
   return (
-    <Container fluid className="navbar">
-      <Link
-        href="#intro"
-        to="intro"
-        // activeClass="active"
-        // className="nav-link"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
+    <Container fluid className="navbar_container p-0">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        // bg="dark"
+        // variant="dark"
+        fixed="top"
+        className="navbar pb-0"
       >
-        <strong>Nicolas Coulot</strong>
-      </Link>
+        {/* <Navbar.Brand href="#home">Nicolas Coulot</Navbar.Brand> */}
+        <Link
+          href="#intro"
+          to="intro"
+          activeClass="active"
+          className="nav-link"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <strong>Nicolas Coulot</strong>
+        </Link>
 
-      <Link
-        href="#about"
-        to="about"
-        // activeClass="active"
-        // className="nav-link"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        About
-      </Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            {/* <Nav.Link href="#about">À Propos</Nav.Link> */}
+            {/* <Nav.Link href="#projects">Projets</Nav.Link> */}
+            {/* <Nav.Link href="#contact"> Contact </Nav.Link> */}
 
-      <Link
-        href="#projects"
-        to="projects"
-        // activeClass="active"
-        // className="nav-link"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Projets
-      </Link>
-
-      <Link
-        href="#contact"
-        to="contact"
-        // activeClass="active"
-        // className="nav-link"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Contact
-      </Link>
+            <Link
+              href="#about"
+              to="about"
+              activeClass="active"
+              className="nav-link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About
+            </Link>
+            <Link
+              href="#projects"
+              to="projects"
+              activeClass="active"
+              className="nav-link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Projets
+            </Link>
+            <Link
+              href="#contact"
+              to="contact"
+              activeClass="active"
+              className="nav-link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/nicolascoulot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-2"
+              variant="outline-light"
+            >
+              <FaLinkedin size="2em" />
+            </Link>
+            <Link
+              href="https://github.com/NicoMilk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-2"
+              variant="outline-light"
+            >
+              <VscGithubInverted size="2em" />
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </Container>
   )
 }

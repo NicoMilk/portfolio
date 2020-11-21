@@ -1,15 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
-import Navbar from "../components/navbar"
+// import { Link } from "gatsby"
+// import Navbar from "../components/navbar"
 import Navbar2 from "../components/navbar2"
 import Footer from "../components/footer"
 // import { Container, Row, Col } from "react-bootstrap"
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+// const ListLink = props => (
+//   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+//     <Link to={props.to}>{props.children}</Link>
+//   </li>
+// )
 
 export default function Layout({ children }) {
   return (

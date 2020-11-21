@@ -12,16 +12,72 @@ body {
   color: var(--milkLight) !important;
 }
 
-footer {
-  border-top: solid 1px;
-  border-color: var(--milkLight);
+/* navbar */
+
+.navbar {
   background-color: var(--milkOrange);
-  font-family: "Montserrat";
+}
+
+.navbar_container {
+  background-color: darksalmon;
+}
+
+.nav-link {
+  color: var(--milkLight) !important;
+}
+
+/* intro */
+
+/* .intro {
+  background-color: brown;
+} */
+
+.intro_bg_image {
+  width: 100%;
+  height: 100vh !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* filter: blur(10px); */
+  /* margin-bottom: 20px; */
 }
 
 .profile_pix {
   max-width: 300px;
-  border: solid, 5px, var(--milkOrange);
+  border: solid 0.75rem var(--milkOrange);
+}
+
+@media (max-width: 991px) {
+  .profile_pix {
+    max-width: 200px;
+    border: solid 0.5rem var(--milkOrange);
+  }
+}
+
+.intro_text {
+  font-family: "Comfortaa";
+  font-size: 5vw;
+  /* font-weight: bolder; */
+}
+
+/* about */
+
+.about {
+  min-height: 100vh !important;
+  background-color: cadetblue;
+}
+
+.about_image {
+  /* width: 100vw; */
+  /* border: solid thick var(--milkOrange); */
+  border-radius: 25px;
+}
+
+/* projects */
+
+.projects {
+  min-height: 100vh !important;
+  background-color: coral;
 }
 
 .card {
@@ -31,26 +87,19 @@ footer {
   border-color: #e9e9e2 !important;
 }
 
-/* vvv test/temp css vvv */
-
-.navbar {
-  background-color: darksalmon;
+.card-body {
+  border-bottom: solid, #ff8000 !important;
 }
 
-/* .intro {
-  background-color: brown;
-} */
-
-.about {
-  background-color: cadetblue;
-}
-
-/* .projects {
-  background-color: coral;
-} */
+/* contact */
 
 .contact {
+  /* height: 100vh !important; */
   background-color: darkcyan;
+}
+
+.contact_image {
+  border-radius: 25px;
 }
 
 .col1 {
@@ -58,4 +107,11 @@ footer {
 }
 .col2 {
   background-color: blueviolet;
+}
+
+footer {
+  border-top: solid 1px;
+  border-color: var(--milkLight);
+  background-color: var(--milkOrange);
+  font-family: "Montserrat";
 }

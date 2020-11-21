@@ -1,15 +1,16 @@
 import React from "react"
-import { Container, Row, Col, Card, Image } from "react-bootstrap"
+import { Container, Row, Col, Card, Image, Button } from "react-bootstrap"
+import { VscBroadcast, VscGithub, VscGithubInverted } from "react-icons/vsc"
 
 export default function Projects() {
   return (
-    <Container fluid className="projects">
+    <Container fluid className="projects py-5">
       <Row className="text-center">
         <Col lg={12}>
           <h1>Projects</h1>
         </Col>
       </Row>
-      <Row>
+      <Row className="pt-5">
         <Col lg={4}>
           <Card className="mb-2">
             <Image
@@ -19,28 +20,70 @@ export default function Projects() {
               fluid
             />
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
+              <Card.Title>Qwiz N' Go</Card.Title>
               <Card.Text>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suo
                   genere perveniant ad extremum; Duo Reges: constructio
                   interrete. Cur iustitia laudatur ?
                 </p>
+                <ul>
+                  <li>
+                    <small>Database : MongoDB</small>
+                  </li>
+                  <li>
+                    <small>Back : NestJS</small>
+                  </li>
+                  <li>
+                    <small>Front : VueJS</small>
+                  </li>
+                </ul>
               </Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <Row>
-                <Col>
-                  <p>Live</p>
-                </Col>
-                <Col>
-                  <p>GitHub</p>
-                </Col>
-              </Row>
+            <Card.Footer className="card_footer text-center">
+              <Container fluid>
+                <Row fluid>
+                  <Col lg={4}>
+                    <Button
+                      href="https://qwiz-go.herokuapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mx-2"
+                      variant="outline-light"
+                    >
+                      <VscBroadcast size="2em" />
+                      <small className="mx-1">Live</small>
+                    </Button>
+                  </Col>
+                  <Col lg={4}>
+                    <Button
+                      href="https://github.com/NicoMilk/qwizngo_front"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mx-2"
+                      variant="outline-light"
+                    >
+                      <VscGithubInverted size="2em" />
+                      <small className="mx-1">Front</small>
+                    </Button>
+                  </Col>
+                  <Col lg={4}>
+                    <Button
+                      href="https://github.com/NicoMilk/qwizngo_back"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mx-2"
+                      variant="outline-light"
+                    >
+                      <VscGithub size="2em" />
+                      <small className="mx-1">Back</small>
+                    </Button>
+                  </Col>
+                </Row>
+              </Container>
             </Card.Footer>
           </Card>
         </Col>
-
         <Col lg={4}>
           <Card className="mb-2">
             <Image
@@ -50,7 +93,7 @@ export default function Projects() {
               fluid
             />
             <Card.Body>
-              <Card.Title>Project 2</Card.Title>
+              <Card.Title>Show Cacao</Card.Title>
               <Card.Text>
                 <p>
                   Nos commodius agimus. Erat enim res aperta. Memini vero,
@@ -61,7 +104,6 @@ export default function Projects() {
             </Card.Body>
           </Card>
         </Col>
-
         <Col lg={4}>
           <Card className="mb-2">
             <Image
@@ -71,7 +113,7 @@ export default function Projects() {
               fluid
             />
             <Card.Body>
-              <Card.Title>Project 3</Card.Title>
+              <Card.Title>Pokedex</Card.Title>
               <Card.Text>
                 <p>
                   Nos commodius agimus. Quare ad ea primum, si videtur; Quid
