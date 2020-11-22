@@ -85,7 +85,7 @@ body {
 
 .projects {
   min-height: 100vh !important;
-  background-color: coral;
+  /* background-color: coral; */
 }
 
 .card {

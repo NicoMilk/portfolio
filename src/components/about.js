@@ -11,11 +11,7 @@ export default function About() {
       </Row>
       <Row className="pt-5">
         <Col className="text-justify" lg={6}>
-          <p
-            data-sal="flip-left"
-            data-sal-duration="2000"
-            data-sal-easing="ease"
-          >
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et
             odio pellentesque diam. Habitasse platea dictumst vestibulum rhoncus
