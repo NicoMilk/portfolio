@@ -18,19 +18,26 @@ export default function Contact() {
             data-netlify="true"
             className="form"
             onSubmit="submit"
+            data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact_v1" />
+            <div hidden>
+              <label>
+                Don't fill this out : <input name="bot-field" />
+              </label>
+            </div>
             <Form.Group controlId="name">
               <Form.Label>Nom</Form.Label>
-              <Form.Control type="text" required />
+              <Form.Control type="text" name="name" required />
             </Form.Group>
             <Form.Group controlId="email">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" required />
+              <Form.Control type="email" name="email" required />
             </Form.Group>
 
             <Form.Group controlId="message">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows="10" required />
+              <Form.Control as="textarea" rows="10" name="message" required />
             </Form.Group>
 
             <Button className="btn_submit" type="submit" block>
