@@ -12,7 +12,7 @@ body {
   color: var(--milkLight) !important;
 }
 
-/* navbar */
+/* NAVBAR */
 
 .navbar_container {
   background-color: rgb(122, 229, 233);
@@ -34,11 +34,12 @@ body {
   }
 }
 
-/* intro */
+/* INTRO */
 
-/* .intro {
-  background-color: brown;
-} */
+.intro {
+  /* background-color: brown; */
+  min-height: 100vh !important;
+}
 
 .intro_bg_image {
   width: 100%;
@@ -48,6 +49,17 @@ body {
   background-repeat: no-repeat;
   /* filter: blur(10px); */
   /* margin-bottom: 20px; */
+}
+
+.dimmer_intro {
+  display: flex;
+  /* background: rgb(22,22,29); */
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 29, 0) 75%,
+    rgb(22, 22, 29, 1) 100%
+  );
+  height: 100%;
 }
 
 .profile_pix {
@@ -68,11 +80,12 @@ body {
   /* font-weight: bolder; */
 }
 
-/* about */
+/* ABOUT */
 
 .about {
   min-height: 100vh !important;
-  background-color: cadetblue;
+  font-family: "Comfortaa";
+  /* background-color: #5f9ea0; */
 }
 
 .about_image {
@@ -81,11 +94,25 @@ body {
   border-radius: 25px;
 }
 
-/* projects */
+/* PROJECTS */
 
 .projects {
   min-height: 100vh !important;
+  font-family: "Comfortaa";
   /* background-color: coral; */
+}
+
+.dimmer_projects {
+  display: flex;
+  /* background: rgb(22, 22, 29, 1); */
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 29, 1) 0%,
+    rgba(22, 22, 29, 0.85) 20%,
+    rgba(22, 22, 29, 0.85) 80%,
+    rgba(22, 22, 29, 1) 100%
+  );
+  height: 100%;
 }
 
 .card {
@@ -97,7 +124,7 @@ body {
 
 @media (max-width: 991px) {
   .card_column {
-    padding: 0em 0px !important;
+    padding: 10px 0px !important;
   }
 }
 
@@ -105,27 +132,54 @@ body {
   border-bottom: solid, #ff8000 !important;
 }
 
-/* contact */
+.card-text {
+  font-family: "Montserrat";
+}
+
+/* CONTACT */
 
 .contact {
+  font-family: "Comfortaa";
   /* height: 100vh !important; */
-  background-color: darkcyan;
+  /* background-color: #008b8b; */
+}
+
+.form {
+  font-family: "Montserrat";
 }
 
 .contact_image {
   border-radius: 25px;
 }
 
-.col1 {
+@media (max-width: 991px) {
+  .contact_image {
+    display: none;
+  }
+}
+
+.btn_submit {
+  border: none !important;
+  background-color: var(--milkOrange) !important;
+}
+
+/* .col1 {
   background-color: aqua;
 }
 .col2 {
   background-color: blueviolet;
-}
+} */
+
+/* FOOTER */
 
 footer {
   border-top: solid 1px;
   border-color: var(--milkLight);
-  background-color: var(--milkOrange);
+  /* background-color: var(--milkOrange); */
   font-family: "Montserrat";
+}
+
+footer p {
+  margin: 0.5rem 0.5rem;
+  padding-top: 0 0.5rem;
 }

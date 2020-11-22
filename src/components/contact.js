@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap"
+import conversation from "../images/svg/undraw_conversation_h12g.svg"
 
 export default function Contact() {
   return (
@@ -11,7 +12,7 @@ export default function Contact() {
       </Row>
       <Row className="pt-5">
         <Col lg={{ span: 6, order: 2 }}>
-          <Form>
+          <Form className="form">
             <Form.Group controlId="name">
               <Form.Label>Nom</Form.Label>
               <Form.Control type="text" required />
@@ -27,22 +28,22 @@ export default function Contact() {
 
             <Form.Group controlId="message">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows="5" required />
+              <Form.Control as="textarea" rows="10" required />
             </Form.Group>
 
-            <Button type="submit" block>
+            <Button className="btn_submit" type="submit" block>
               Envoyer
             </Button>
           </Form>
         </Col>
         <Col lg={{ span: 6, order: 1 }}>
           <Image
-            data-sal="flip-top"
+            data-sal="fade"
             data-sal-duration="2000"
             data-sal-easing="ease"
             className="contact_image"
-            src="https://source.unsplash.com/1600x900/?scuba"
-            alt="about image"
+            src={conversation}
+            alt="contact image"
             fluid
           />
         </Col>

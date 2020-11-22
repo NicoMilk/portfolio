@@ -1,5 +1,9 @@
 import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
+import { FaPhp, FaLaravel, FaReact, FaVuejs } from "react-icons/fa"
+import { SiJavascript, SiMysql, SiMongodb } from "react-icons/si"
+
+import billboard from "../images/covid_code_billboard.jpg"
 
 export default function About() {
   return (
@@ -31,14 +35,84 @@ export default function About() {
             nunc. Maecenas sed enim ut sem viverra. Vulputate odio ut enim
             blandit volutpat.
           </p>
+          <FaPhp
+            fill="#7377ad"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="50"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="php icon"
+          />
+          <FaLaravel
+            fill="#ff2d20"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="100"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="laravel icon"
+          />
+          <SiJavascript
+            fill="#e9d44d"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="150"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="js icon"
+          />
+          <FaReact
+            fill="#61dafb"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="react icon"
+          />
+          <FaVuejs
+            fill="#41b883"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="250"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="vuejs icon"
+          />
+          <SiMysql
+            fill="#00758f"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="300"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="mysql icon"
+          />
+          <SiMongodb
+            fill="#10aa50"
+            size="5em"
+            data-sal="zoom-out"
+            data-sal-delay="350"
+            data-sal-duration="500"
+            data-sal-easing="ease"
+            className="about_icon"
+            alt="mongodb icon"
+          />
         </Col>
         <Col lg={6}>
           <Image
-            data-sal="flip-right"
+            data-sal="fade"
             data-sal-duration="2000"
             data-sal-easing="ease"
             className="about_image"
-            src="https://source.unsplash.com/1600x900/?scuba"
+            src={billboard}
             alt="about image"
             fluid
           />
