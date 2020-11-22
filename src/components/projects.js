@@ -2,11 +2,11 @@ import React from "react"
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap"
 import { VscBroadcast, VscGithub, VscGithubInverted } from "react-icons/vsc"
 import { Parallax } from "react-parallax"
-import code_bgd2 from "../images/code_bgd2.jpg"
+import code_bgd3 from "../images/code_bgd3.jpg"
 
 export default function Projects() {
   return (
-    <Parallax bgImage={code_bgd2} strength={500}>
+    <Parallax bgImage={code_bgd3} strength={500}>
       <div className="dimmer_projects">
         <Container fluid className="projects py-5">
           <Row className="text-center">

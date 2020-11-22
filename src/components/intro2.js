@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 // import Image from "react-bootstrap/Image"
 import BgImage from "gatsby-background-image"
 import Img from "gatsby-image"
+// import { BsChevronDoubleDown } from "react-icons/bs"
 
 import { Parallax } from "react-parallax"
 import underwater_bgd from "../images/underwater_bgd.jpg"
@@ -53,14 +54,15 @@ export default function Intro2() {
             </Col>
             <Col lg={8}>
               <h1 className="intro_text my-2 mx-auto">
-                Hi ! I'm Nico, and I may be your next junior full stack
-                developper too ! Wanna talk about it ?
+                Salut ! Je suis Nico, développeur full stack junior. Voulez-vous
+                en savoir plus ?
               </h1>
             </Col>
           </Row>
           {/* </BgImage> */}
         </Container>
       </div>
+      {/* <BsChevronDoubleDown size="5em" /> */}
     </Parallax>
   )
 }

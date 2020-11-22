@@ -12,15 +12,17 @@ export default function Contact() {
       </Row>
       <Row className="pt-5">
         <Col lg={{ span: 6, order: 2 }}>
-          <Form className="form">
+          <Form
+            name="contact_v1"
+            method="post"
+            data-netlify="true"
+            className="form"
+            onSubmit="submit"
+          >
             <Form.Group controlId="name">
               <Form.Label>Nom</Form.Label>
               <Form.Control type="text" required />
             </Form.Group>
-            {/* <Form.Group controlId="firstName">
-              <Form.Label>Prénom</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group> */}
             <Form.Group controlId="email">
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" required />
