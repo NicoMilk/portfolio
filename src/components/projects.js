@@ -11,25 +11,30 @@ export default function Projects() {
         <Container fluid className="projects py-5">
           <Row className="text-center">
             <Col lg={12}>
-              <h1>Projects</h1>
+              <h1>Projets</h1>
             </Col>
           </Row>
-          <Row className="pt-5">
+          <Row className="text-center">
+            <Col lg={12}>
+              <p>Voici une sélection de travaux de formation ou personnels.</p>
+            </Col>
+          </Row>
+          <Row className="content_padding">
             <Col className="card_column" lg={4}>
               <Card className="mb-2 h-100">
                 <Image
                   className="card-img-top"
-                  src="https://source.unsplash.com/1600x900/?nature,water"
+                  src="https://source.unsplash.com/1024x576/"
                   alt="Project thumbnail"
                   fluid
                 />
                 <Card.Body>
                   <Card.Title>Qwiz N' Go</Card.Title>
                   <Card.Text>
+                    <p>Jeu de QCM chronométrés sur le code.</p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suo genere perveniant ad extremum; Duo Reges: constructio
-                      interrete. Cur iustitia laudatur ?
+                      Favoris, ranking et commentaire, bonus, suggestion de
+                      nouveau quiz, tableau des scores, statistiques admin...
                     </p>
                     <ul>
                       <li>
@@ -94,17 +99,17 @@ export default function Projects() {
               <Card className="mb-2 h-100">
                 <Image
                   className="card-img-top"
-                  src="https://source.unsplash.com/1600x900/?nature,water"
+                  src="https://source.unsplash.com/1024x576/"
                   alt="Project thumbnail"
                   fluid
                 />
                 <Card.Body>
                   <Card.Title>Show Cacao</Card.Title>
                   <Card.Text>
+                    <p>Site de billetterie en ligne.</p>
                     <p>
-                      Nos commodius agimus. Erat enim res aperta. Memini vero,
-                      inquam; Itaque fecimus. Odium autem et invidiam facile
-                      vitabis. Quid me istud rogas ?
+                      Rechrche multicritères, gestion de favoris avec alerte,
+                      génération de QRcode...
                     </p>
                     <ul>
                       <li>
@@ -172,7 +177,7 @@ export default function Projects() {
               <Card className="mb-2 h-100">
                 <Image
                   className="card-img-top"
-                  src="https://source.unsplash.com/1600x900/?nature,water"
+                  src="https://source.unsplash.com/1024x576/"
                   alt="Project thumbnail"
                   fluid
                 />
@@ -180,11 +185,11 @@ export default function Projects() {
                   <Card.Title>Pokedex</Card.Title>
                   <Card.Text>
                     <p>
-                      Nos commodius agimus. Quare ad ea primum, si videtur; Quid
-                      ergo attinet gloriose loqui, nisi constanter loquare?
-                      Nihilo magis. Qui-vere falsone, quaerere mittimus-dicitur
-                      oculis se privasse; Qui convenit? Sed ille, ut dixi,
-                      vitiose. Sed fortuna fortis;
+                      Encyclopédie des 150 premiers monstres avec leurs
+                      caractéristiques.
+                    </p>
+                    <p>
+                      Gestion d'équipe, gain automatique, système d'échange...
                     </p>
                     <ul>
                       <li>

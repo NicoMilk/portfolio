@@ -10,7 +10,7 @@ export default function Contact() {
           <h1>Parlons-en !</h1>
         </Col>
       </Row>
-      <Row className="pt-5">
+      <Row className="content_padding">
         <Col lg={{ span: 6, order: 2 }}>
           <Form
             name="contact_v1"
@@ -36,7 +36,7 @@ export default function Contact() {
             </Form.Group>
 
             <Form.Group controlId="message">
-              <Form.Label>Message</Form.Label>
+              <Form.Label>Que puis-je pour vous ?</Form.Label>
               <Form.Control as="textarea" rows="10" name="message" required />
             </Form.Group>
 
