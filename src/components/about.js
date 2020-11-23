@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import { FaPhp, FaLaravel, FaReact, FaVuejs } from "react-icons/fa"
 import { FiDatabase } from "react-icons/fi"
 import { SiJavascript, SiMysql, SiMongodb } from "react-icons/si"
+import NestJS from "../images/svg/nestjs.svg"
 
 import billboard from "../images/covid_code_billboard.jpg"
 
@@ -41,9 +42,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <FaPhp
                   fill="#7377ad"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="50"
+                  data-sal-delay="100"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -56,9 +57,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <FaLaravel
                   fill="#ff2d20"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="100"
+                  data-sal-delay="200"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -73,9 +74,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <SiJavascript
                   fill="#e9d44d"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="150"
+                  data-sal-delay="300"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -88,9 +89,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <FaReact
                   fill="#61dafb"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="200"
+                  data-sal-delay="400"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -103,9 +104,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <FaVuejs
                   fill="#41b883"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="250"
+                  data-sal-delay="500"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -115,14 +116,29 @@ export default function About() {
               <Row className="justify-content-center mt-1">
                 <small>VueJS</small>
               </Row>
+              <Row className="justify-content-center mt-3">
+                <Image
+                  data-sal="zoom-out"
+                  data-sal-delay="600"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  src={NestJS}
+                  alt="nestjs icon"
+                  fluid
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>NestJS</small>
+              </Row>
             </Col>
             <Col xs={4}>
               <Row className="justify-content-center mt-3">
                 <FiDatabase
                   stroke="#e9e9e2"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="300"
+                  data-sal-delay="700"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -135,9 +151,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <SiMysql
                   fill="#00758f"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="350"
+                  data-sal-delay="800"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -150,9 +166,9 @@ export default function About() {
               <Row className="justify-content-center mt-3">
                 <SiMongodb
                   fill="#10aa50"
-                  size="5em"
+                  size="4em"
                   data-sal="zoom-out"
-                  data-sal-delay="400"
+                  data-sal-delay="900"
                   data-sal-duration="1000"
                   data-sal-easing="ease"
                   className="about_icon mx-2"
@@ -170,7 +186,7 @@ export default function About() {
             data-sal="fade"
             data-sal-duration="2000"
             data-sal-easing="ease"
-            className="about_image"
+            className="about_image pt-0 mt-3"
             src={billboard}
             alt="about image"
             fluid

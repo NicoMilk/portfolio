@@ -108,7 +108,7 @@ export default function Projects() {
                   <Card.Text>
                     <p>Site de billetterie en ligne.</p>
                     <p>
-                      Rechrche multicritères, gestion de favoris avec alerte,
+                      Recherche multicritères, gestion de favoris avec alerte,
                       génération de QRcode...
                     </p>
                     <ul>
