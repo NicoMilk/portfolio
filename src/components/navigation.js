@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 import { VscGithubInverted } from "react-icons/vsc"
 import { FaHome, FaLinkedin } from "react-icons/fa"
 
-export default function Navbar2() {
+export default function Navigation() {
   return (
     <Container fluid className="navbar_container p-0">
       <Navbar
@@ -44,7 +44,7 @@ export default function Navbar2() {
               className="nav-link"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-55}
               duration={500}
             >
               About
@@ -56,7 +56,7 @@ export default function Navbar2() {
               className="nav-link"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-55}
               duration={500}
             >
               Projets
@@ -68,7 +68,7 @@ export default function Navbar2() {
               className="nav-link"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-55}
               duration={500}
             >
               Contact

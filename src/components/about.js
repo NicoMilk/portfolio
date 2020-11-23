@@ -1,6 +1,7 @@
 import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import { FaPhp, FaLaravel, FaReact, FaVuejs } from "react-icons/fa"
+import { FaPhp, FaLaravel, FaReact, FaVuejs, FaDatabase } from "react-icons/fa"
+import { FiDatabase } from "react-icons/fi"
 import { SiJavascript, SiMysql, SiMongodb } from "react-icons/si"
 
 import billboard from "../images/covid_code_billboard.jpg"
@@ -13,7 +14,7 @@ export default function About() {
           <h1>À propos...</h1>
         </Col>
       </Row>
-      <Row className="pt-5">
+      <Row className="content_padding">
         <Col className="text-justify" lg={6}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,76 +36,134 @@ export default function About() {
             nunc. Maecenas sed enim ut sem viverra. Vulputate odio ut enim
             blandit volutpat.
           </p>
-          <FaPhp
-            fill="#7377ad"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="50"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="php icon"
-          />
-          <FaLaravel
-            fill="#ff2d20"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="100"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="laravel icon"
-          />
-          <SiJavascript
-            fill="#e9d44d"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="150"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="js icon"
-          />
-          <FaReact
-            fill="#61dafb"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="200"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="react icon"
-          />
-          <FaVuejs
-            fill="#41b883"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="250"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="vuejs icon"
-          />
-          <SiMysql
-            fill="#00758f"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="300"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="mysql icon"
-          />
-          <SiMongodb
-            fill="#10aa50"
-            size="5em"
-            data-sal="zoom-out"
-            data-sal-delay="350"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-            className="about_icon"
-            alt="mongodb icon"
-          />
+          <Row className="d-flex justify-content-around text-center">
+            <Col xs={4}>
+              <Row className="justify-content-center mt-3">
+                <FaPhp
+                  fill="#7377ad"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="50"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="php icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>PHP</small>
+              </Row>
+              <Row className="justify-content-center mt-3">
+                <FaLaravel
+                  fill="#ff2d20"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="laravel icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>Laravel</small>
+              </Row>
+            </Col>
+            <Col className="skills_icons_central_column" xs={4}>
+              <Row className="justify-content-center mt-3">
+                <SiJavascript
+                  fill="#e9d44d"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="150"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="js icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>JavaScript</small>
+              </Row>
+              <Row className="justify-content-center mt-3">
+                <FaReact
+                  fill="#61dafb"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="200"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="react icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>React</small>
+              </Row>
+              <Row className="justify-content-center mt-3">
+                <FaVuejs
+                  fill="#41b883"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="250"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="vuejs icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>VueJS</small>
+              </Row>
+            </Col>
+            <Col xs={4}>
+              <Row className="justify-content-center mt-3">
+                <FiDatabase
+                  stroke="#e9e9e2"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="300"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="database icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>Database</small>
+              </Row>
+              <Row className="justify-content-center mt-3">
+                <SiMysql
+                  fill="#00758f"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="350"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="mysql icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>MySQL</small>
+              </Row>
+              <Row className="justify-content-center mt-3">
+                <SiMongodb
+                  fill="#10aa50"
+                  size="5em"
+                  data-sal="zoom-out"
+                  data-sal-delay="400"
+                  data-sal-duration="1000"
+                  data-sal-easing="ease"
+                  className="about_icon mx-2"
+                  alt="mongodb icon"
+                />
+              </Row>
+              <Row className="justify-content-center mt-1">
+                <small>MongoDB</small>
+              </Row>
+            </Col>
+          </Row>
         </Col>
         <Col lg={6}>
           <Image
