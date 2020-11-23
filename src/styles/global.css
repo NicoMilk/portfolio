@@ -28,13 +28,13 @@ body {
 
 /* NAVBAR */
 
-.navbar_container {
-  /* background-color: rgb(122, 229, 233); */
-}
+/* .navbar_container {
+  background-color: rgb(122, 229, 233);
+} */
 
-.navbar {
-  /* background-color: var(--milkOrange) !important; */
-}
+/* .navbar {
+  background-color: var(--milkOrange) !important;
+} */
 
 .nav-link {
   color: var(--milkOrange) !important;
@@ -124,10 +124,6 @@ body {
   /* background-color: coral; */
   min-height: 100vh !important;
   font-family: "Comfortaa";
-}
-
-.projects a {
-  text-decoration: none !important;
 }
 
 .dimmer_projects {

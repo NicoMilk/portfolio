@@ -1,15 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-// import Image from "react-bootstrap/Image"
-import BgImage from "gatsby-background-image"
 import Img from "gatsby-image"
-// import { BsChevronDoubleDown } from "react-icons/bs"
+import { BsChevronDoubleDown } from "react-icons/bs"
 
 import { Parallax } from "react-parallax"
 import underwater_bgd from "../images/underwater_bgd.jpg"
-
-// import profilePic from "../images/nico_avatar.png"
 
 export default function Intro() {
   const data = useStaticQuery(
@@ -40,10 +36,6 @@ export default function Intro() {
           fluid
           className="intro d-flex align-items-center text-center px-0"
         >
-          {/* <BgImage
-            className="intro_bg_image"
-            fluid={data.intro_bg_pix.childImageSharp.fluid}
-          > */}
           <Row>
             <Col lg={4}>
               <Img
@@ -57,9 +49,10 @@ export default function Intro() {
                 Salut ! Je suis Nico, développeur full stack junior.
               </h2>
             </Col>
+            <Col xs={12}>
+              <BsChevronDoubleDown size="2em" />
+            </Col>
           </Row>
-          {/* <BsChevronDoubleDown size="3em" /> */}
-          {/* </BgImage> */}
         </Container>
       </div>
     </Parallax>

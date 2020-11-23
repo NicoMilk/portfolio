@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import { FaPhp, FaLaravel, FaReact, FaVuejs, FaDatabase } from "react-icons/fa"
+import { FaPhp, FaLaravel, FaReact, FaVuejs } from "react-icons/fa"
 import { FiDatabase } from "react-icons/fi"
 import { SiJavascript, SiMysql, SiMongodb } from "react-icons/si"
 
