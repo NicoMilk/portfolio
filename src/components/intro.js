@@ -50,6 +50,7 @@ export default function Intro() {
               </h2>
             </Col>
             <Col xs={12}>
+              <p>(Work in progress... ^^)</p>
               <BsChevronDoubleDown size="2em" />
             </Col>
           </Row>
