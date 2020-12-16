@@ -10,7 +10,7 @@ import underwater_bgd from "../images/underwater_bgd.jpg"
 export default function Intro() {
   const data = useStaticQuery(
     graphql`
-      query test {
+      query {
         profile_pix: file(relativePath: { eq: "nico_avatar.png" }) {
           childImageSharp {
             fluid(maxWidth: 811) {
@@ -30,6 +30,7 @@ export default function Intro() {
   )
 
   return (
+    // 2eme partie de la requete graphql sert encore avec utilisation de Parallax ???
     <Parallax bgImage={underwater_bgd} strength={500}>
       <div className="dimmer_intro">
         <Container

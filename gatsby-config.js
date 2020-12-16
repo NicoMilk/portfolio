@@ -6,6 +6,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
@@ -24,6 +31,19 @@ module.exports = {
         rootMargin: "0% 50%", // Corresponds to root's bounding box margin
         enterEventName: "sal:in", // Enter event name
         exitEventName: "sal:out", // Exit event name
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-remove-root-p-tag`,
+            options: {
+              parents: ["default-site-plugin"],
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,
