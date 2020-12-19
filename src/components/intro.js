@@ -25,6 +25,11 @@ export default function Intro() {
             }
           }
         }
+        markdownRemark(frontmatter: { title: { eq: "Intro" } }) {
+          frontmatter {
+            content
+          }
+        }
       }
     `
   )
@@ -47,11 +52,12 @@ export default function Intro() {
             </Col>
             <Col lg={8}>
               <h2 className="intro_text my-2 mx-auto">
-                Salut ! Je suis Nico, développeur full stack junior.
+                {/* Salut ! Je suis Nico, développeur web full stack. */}
+                {data.markdownRemark.frontmatter.content}
               </h2>
             </Col>
             <Col xs={12}>
-              <p>(Work in progress... ^^)</p>
+              {/* <p>(Work in progress... ^^)</p> */}
               <BsChevronDoubleDown size="2em" />
             </Col>
           </Row>

@@ -1,7 +1,0 @@
----
-lang: "fr"
-title: "À propos"
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam at lectus urna duis convallis. Dui nunc mattis enim ut tellus elementum. Viverra aliquet eget sit amet tellus cras. Sollicitudin nibh sit amet commodo. Enim ut sem viverra aliquet eget sit amet. In est ante in nibh mauris cursus mattis molestie. Diam quam nulla porttitor massa id. Posuere ac ut consequat semper viverra. Amet nulla facilisi morbi tempus iaculis urna. Rhoncus dolor purus non enim. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Nulla at volutpat diam ut venenatis tellus. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Lobortis elementum nibh tellus molestie nunc non blandit. Adipiscing elit pellentesque habitant morbi tristique senectus. Egestas sed tempus urna et pharetra pharetra massa. Habitant morbi tristique senectus et.
-Netus et malesuada fames ac turpis egestas. Pellentesque adipiscing commodo elit at. Quisque non tellus orci ac. Pretium fusce id velit ut tortor pretium viverra. Morbi tristique senectus et netus et malesuada fames ac. A iaculis at erat pellentesque adipiscing. Arcu risus quis varius quam quisque id. Lectus mauris ultrices eros in. Lectus nulla at volutpat diam ut venenatis tellus in. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Nec nam aliquam sem et.

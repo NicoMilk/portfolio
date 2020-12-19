@@ -152,6 +152,10 @@ body {
   }
 }
 
+.card-image-top {
+  max-height: 320px !important;
+}
+
 .card-body {
   border-bottom: solid, #ff8000 !important;
 }

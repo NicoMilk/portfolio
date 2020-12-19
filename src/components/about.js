@@ -1,25 +1,40 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col, Image } from "react-bootstrap"
+
+import { CgFileDocument } from "react-icons/cg"
 import { FaPhp, FaLaravel, FaReact, FaVuejs } from "react-icons/fa"
 import { FiDatabase } from "react-icons/fi"
 import { SiJavascript, SiMysql, SiMongodb } from "react-icons/si"
 import NestJS from "../images/svg/nestjs.svg"
-
 import billboard from "../images/covid_code_billboard.jpg"
 
 export default function About() {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/ab/gmi" } }) {
-          nodes {
-            frontmatter {
-              title
-            }
-            html
-            rawMarkdownBody
+        markdownRemark(fileAbsolutePath: { regex: "/about/gmi" }) {
+          frontmatter {
+            title
+            skills
+            likeTitle
+            like1
+            like2
+            like3
+            dislikeTitle
+            dislike1
+            dislike2
+            dislike3
+            mottoTitle
+            motto
+            mottoAuthor
+            guiltyTitle
+            guilty
           }
+          html
+        }
+        file(name: { regex: "/resume/gmi" }, extension: { eq: "pdf" }) {
+          publicURL
         }
       }
     `
@@ -29,12 +44,41 @@ export default function About() {
     <Container fluid className="about py-5">
       <Row className="text-center">
         <Col className="" lg={12}>
-          <h1>{data.allMarkdownRemark.nodes[0].frontmatter.title}</h1>
+          <h1>{data.markdownRemark.frontmatter.title}</h1>
         </Col>
       </Row>
       <Row className="content_padding">
         <Col className="text-justify" lg={6}>
-          {data.allMarkdownRemark.nodes[0].rawMarkdownBody}
+          {/* vvv /!\ React syntax replacement for Javascript's "innerHTML" to inject HTML in the browser DOM  : https://medium.com/better-programming/what-is-dangerouslysetinnerhtml-6d6a98cbc187*/}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html,
+            }}
+          />
+          <Row className="justify-content-center mt-3">
+            <a
+              href={data.file.publicURL}
+              without
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <CgFileDocument
+                size=".75em"
+                className="intro_text mx-2"
+                alt="pdf resume"
+              />
+            </a>
+          </Row>
+          <Row className="justify-content-center mt-1">
+            <small>CV</small>
+          </Row>
+
+          {/* Skills */}
+
+          <h5 className="text-center my-5">
+            {data.markdownRemark.frontmatter.skills}
+          </h5>
+
           <Row className="d-flex justify-content-around text-center">
             <Col xs={4}>
               <Row className="justify-content-center mt-3">
@@ -189,6 +233,39 @@ export default function About() {
             alt="about image"
             fluid
           />
+        </Col>
+      </Row>
+
+      {/* Like / Dislike */}
+
+      <Row className="text-center mt-5">
+        <Col lg={6}>
+          <h5>{data.markdownRemark.frontmatter.likeTitle} :</h5>
+          <p>{data.markdownRemark.frontmatter.like1}</p>
+          <p>{data.markdownRemark.frontmatter.like2}</p>
+          <p>{data.markdownRemark.frontmatter.like3}</p>
+        </Col>
+        <Col lg={6}>
+          <h5>{data.markdownRemark.frontmatter.dislikeTitle} :</h5>
+          <p>{data.markdownRemark.frontmatter.dislike1}</p>
+          <p>{data.markdownRemark.frontmatter.dislike2}</p>
+          <p>{data.markdownRemark.frontmatter.dislike3}</p>
+        </Col>
+      </Row>
+
+      {/* Creed / Guilty pleasure */}
+
+      <Row className="text-center mt-5">
+        <Col lg={12}>
+          <h5>{data.markdownRemark.frontmatter.mottoTitle} :</h5>
+          <blockquote>{data.markdownRemark.frontmatter.motto}</blockquote>
+          <small>
+            <em>{data.markdownRemark.frontmatter.mottoAuthor}.</em>
+          </small>
+          <h5 className="mt-5">
+            {data.markdownRemark.frontmatter.guiltyTitle}
+          </h5>
+          <p>{data.markdownRemark.frontmatter.guilty}</p>
         </Col>
       </Row>
     </Container>

@@ -1,15 +1,37 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 export default function Footer() {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            author
+          }
+        }
+        markdownRemark(fileAbsolutePath: { regex: "/footer/gmi" }) {
+          frontmatter {
+            greeting
+          }
+        }
+      }
+    `
+  )
+
   return (
-    <Container fluid className="text-center">
+    <Container fluid>
       <Row>
         <Col lg={6}>
-          <p>© Nicolas Coulot 2020</p>
+          <p className="text-center">
+            © {data.site.siteMetadata.author} {new Date().getFullYear()}
+          </p>
         </Col>
         <Col lg={6}>
-          <p>Be well !</p>
+          <p className="text-center">
+            {data.markdownRemark.frontmatter.greeting}
+          </p>
         </Col>
       </Row>
     </Container>

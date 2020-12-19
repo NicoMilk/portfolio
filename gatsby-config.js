@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nicolas Coulot`,
+    author: `Nicolas Coulot`,
   },
   plugins: [
     {
@@ -15,6 +16,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -36,14 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-remove-root-p-tag`,
-            options: {
-              parents: ["default-site-plugin"],
-            },
-          },
-        ],
+        plugins: [],
       },
     },
     `gatsby-plugin-react-helmet`,

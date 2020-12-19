@@ -14,7 +14,7 @@ export default function Home() {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Nicolas - Jr Full Stack Developer </title>
+        <title>Nicolas - Full Stack Web Developer </title>
         <link
           rel="canonical"
           href="https://peaceful-cori-c45f86.netlify.app/"
