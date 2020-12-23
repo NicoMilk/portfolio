@@ -24,7 +24,9 @@ export default function Contact() {
     <Container fluid className="contact py-5">
       <Row className="text-center">
         <Col lg={12}>
-          <h1>{data.markdownRemark.frontmatter.title}</h1>
+          <h1 className="section_title">
+            {data.markdownRemark.frontmatter.title}
+          </h1>
         </Col>
       </Row>
       <Row className="content_padding">

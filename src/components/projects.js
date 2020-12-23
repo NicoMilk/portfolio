@@ -22,7 +22,7 @@ export default function Projects() {
         <Container fluid className="projects py-5">
           <Row className="text-center">
             <Col lg={12}>
-              <h1>Projets</h1>
+              <h1 className="section_title">Projets</h1>
             </Col>
           </Row>
           <Row className="text-center pt-5">
@@ -64,6 +64,7 @@ export default function Projects() {
                         <small>Front : VueJS</small>
                       </li>
                     </ul>
+                    <p>À revoir : UI</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer className="card_footer text-center">
@@ -117,7 +118,7 @@ export default function Projects() {
                 <Image
                   className="card-img-top"
                   // src="https://source.unsplash.com/1024x576/"
-                  src="https://source.unsplash.com/9DZY0mO98xU"
+                  src="https://source.unsplash.com/9DZY0mO98xU/320x240"
                   alt="Project thumbnail"
                   fluid
                 />
@@ -237,6 +238,7 @@ export default function Projects() {
                         <small>Front : VueJS</small>
                       </li>
                     </ul>
+                    <p>À revoir : Navigation</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer className="card_footer text-center">
@@ -302,7 +304,7 @@ export default function Projects() {
 
           <Row className="text-center pt-5">
             <Col lg={12}>
-              <h5>Je travaille actuellement sur :</h5>
+              <h5>Actuellement je planche sur :</h5>
             </Col>
           </Row>
           {/*  */}

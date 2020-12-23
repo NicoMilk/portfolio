@@ -47,7 +47,7 @@ export default function Navigation() {
               offset={-55}
               duration={500}
             >
-              À propos{" "}
+              À propos
             </Link>
             <Link
               href="#projects"

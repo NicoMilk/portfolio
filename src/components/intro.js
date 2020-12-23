@@ -55,6 +55,9 @@ export default function Intro() {
                 {/* Salut ! Je suis Nico, développeur web full stack. */}
                 {data.markdownRemark.frontmatter.content}
               </h2>
+              {/* <a href="#about" to="about" className="intro_text">
+                (Prenez-moi en stage !)
+              </a> */}
             </Col>
             <Col xs={12}>
               {/* <p>(Work in progress... ^^)</p> */}
